@@ -1,4 +1,4 @@
-# Stock Market Prediction Pipeline
+# Machine Learning Powered Trading Algorithm
 
 This repository contains a **well-structured, step-by-step stock prediction system**, where each script handles a specific task in the workflow. The pipeline fetches raw data from an external API, formats it, extracts features, trains a predictive model (Random Forest), and uses that model to simulate future trading days. Additional tools are included for evaluating prediction performance, visualizing results, and backtesting hypothetical trades.
 
