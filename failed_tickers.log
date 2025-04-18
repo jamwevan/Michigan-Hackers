@@ -1,0 +1,176 @@
+2025-04-17 18:20:00,779 
+1 Failed download:
+2025-04-17 18:20:00,779 ['MMM']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-04-17 18:20:01,095 
+1 Failed download:
+2025-04-17 18:20:01,095 ['AOS']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-04-17 18:20:01,546 
+1 Failed download:
+2025-04-17 18:20:01,546 ['ABT']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-04-17 18:20:01,878 
+1 Failed download:
+2025-04-17 18:20:01,879 ['ABBV']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-04-17 18:20:02,214 
+1 Failed download:
+2025-04-17 18:20:02,214 ['ACN']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-04-17 18:20:02,774 
+1 Failed download:
+2025-04-17 18:20:02,774 ['ADBE']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-04-17 18:20:03,458 
+1 Failed download:
+2025-04-17 18:20:03,459 ['AMD']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-04-17 18:20:04,128 
+1 Failed download:
+2025-04-17 18:20:04,128 ['AES']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-04-17 18:20:04,514 
+1 Failed download:
+2025-04-17 18:20:04,514 ['AFL']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-04-17 18:20:05,093 
+1 Failed download:
+2025-04-17 18:20:05,093 ['A']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-04-17 18:20:05,491 
+1 Failed download:
+2025-04-17 18:20:05,491 ['APD']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-04-17 18:20:05,829 
+1 Failed download:
+2025-04-17 18:20:05,829 ['AKAM']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-04-17 18:20:06,206 
+1 Failed download:
+2025-04-17 18:20:06,207 ['ALB']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-04-17 18:20:07,088 
+1 Failed download:
+2025-04-17 18:20:07,088 ['ARE']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-04-17 18:20:48,417 - 
+1 Failed download:
+2025-04-17 18:20:48,417 - ['MMM']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-04-17 18:20:48,835 - 
+1 Failed download:
+2025-04-17 18:20:48,835 - ['AOS']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-04-17 18:20:49,156 - 
+1 Failed download:
+2025-04-17 18:20:49,156 - ['ABT']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-04-17 18:20:49,463 - 
+1 Failed download:
+2025-04-17 18:20:49,463 - ['ABBV']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-04-17 18:20:49,802 - 
+1 Failed download:
+2025-04-17 18:20:49,802 - ['ACN']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-04-17 18:20:50,239 - 
+1 Failed download:
+2025-04-17 18:20:50,239 - ['ADBE']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-04-17 18:20:50,570 - 
+1 Failed download:
+2025-04-17 18:20:50,570 - ['AMD']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-04-17 18:20:50,903 - 
+1 Failed download:
+2025-04-17 18:20:50,903 - ['AES']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-04-17 18:20:51,214 - 
+1 Failed download:
+2025-04-17 18:20:51,214 - ['AFL']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-04-17 18:20:51,507 - 
+1 Failed download:
+2025-04-17 18:20:51,507 - ['A']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-04-17 18:20:51,799 - 
+1 Failed download:
+2025-04-17 18:20:51,799 - ['APD']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-04-17 18:20:52,098 - 
+1 Failed download:
+2025-04-17 18:20:52,098 - ['AKAM']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-04-17 18:20:52,421 - 
+1 Failed download:
+2025-04-17 18:20:52,421 - ['ALB']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2025-04-17 18:21:40,364 - MMM: 401 {"status":"ERROR","request_id":"5def49e7e79c5748844191667d6fa81d","error":"Unknown API Key"}
+2025-04-17 18:21:40,563 - AOS: 401 {"status":"ERROR","request_id":"35e3ee125401087148c6a2c82e08c2ed","error":"Unknown API Key"}
+2025-04-17 18:21:40,801 - ABT: 401 {"status":"ERROR","request_id":"4a5b0fc304102da4f7fdafdf7f828931","error":"Unknown API Key"}
+2025-04-17 18:21:40,962 - ABBV: 401 {"status":"ERROR","request_id":"62a7f4f1de89c425c73d5263b3c68b71","error":"Unknown API Key"}
+2025-04-17 18:21:41,201 - ACN: 401 {"status":"ERROR","request_id":"1109716bfb43d6b7d3120c0cf2ae5533","error":"Unknown API Key"}
+2025-04-17 18:21:41,333 - ADBE: 401 {"status":"ERROR","request_id":"6b97bba89bc747739a3a230e1c33a3ed","error":"Unknown API Key"}
+2025-04-17 18:21:41,424 - AMD: 401 {"status":"ERROR","request_id":"0b1dfb28a7fc364264063d3167fea7cb","error":"Unknown API Key"}
+2025-04-17 18:21:41,519 - AES: 401 {"status":"ERROR","request_id":"baad3a047e32e7cbb21ed574395301c3","error":"Unknown API Key"}
+2025-04-17 18:21:41,601 - AFL: 401 {"status":"ERROR","request_id":"6a4b83dfa062fc29439730ffae7895ef","error":"Unknown API Key"}
+2025-04-17 18:21:41,684 - A: 401 {"status":"ERROR","request_id":"c9818bdbea86afb4b619cc9a6d3ab5d4","error":"Unknown API Key"}
+2025-04-17 18:21:41,763 - APD: 401 {"status":"ERROR","request_id":"36ccecbb6c61860ebb1460e2ed1751a1","error":"Unknown API Key"}
+2025-04-17 18:21:41,846 - AKAM: 401 {"status":"ERROR","request_id":"9cd018e2a1d8651c7881af1e246d32cb","error":"Unknown API Key"}
+2025-04-17 18:21:41,924 - ALB: 401 {"status":"ERROR","request_id":"c9c720e5af6b2880f206c8259b857786","error":"Unknown API Key"}
+2025-04-17 18:21:42,008 - ARE: 401 {"status":"ERROR","request_id":"714dacd8282c8f3abe50f1ddd7758c9d","error":"Unknown API Key"}
+2025-04-17 18:21:42,095 - ALGN: 401 {"status":"ERROR","request_id":"359330488483e5a8660f2265ec01c053","error":"Unknown API Key"}
+2025-04-17 18:21:42,173 - ALLE: 401 {"status":"ERROR","request_id":"620fcf010ec8a2a086510a4280d1f988","error":"Unknown API Key"}
+2025-04-17 18:21:42,252 - LNT: 401 {"status":"ERROR","request_id":"da0ce8ab48a81a3818be906a6480af40","error":"Unknown API Key"}
+2025-04-17 18:21:42,331 - ALL: 401 {"status":"ERROR","request_id":"18b9c740547bfd3354dcb5b40cf1e23a","error":"Unknown API Key"}
+2025-04-17 18:21:42,448 - GOOGL: 401 {"status":"ERROR","request_id":"09da5f934f56d767621e5053f3b36e8c","error":"Unknown API Key"}
+2025-04-17 18:21:42,541 - GOOG: 401 {"status":"ERROR","request_id":"c167133e8bd8c9cc7c0897502f9137bf","error":"Unknown API Key"}
+2025-04-17 18:21:42,620 - MO: 401 {"status":"ERROR","request_id":"1a42a4a4ca8d917d52698d79806fd7e2","error":"Unknown API Key"}
+2025-04-17 18:21:42,698 - AMZN: 401 {"status":"ERROR","request_id":"0eef1404ac6df59ef3298c3115c6b105","error":"Unknown API Key"}
+2025-04-17 18:21:42,779 - AMCR: 401 {"status":"ERROR","request_id":"5d75e5758f6bf715aded0e37b74401bc","error":"Unknown API Key"}
+2025-04-17 18:21:42,869 - AEE: 401 {"status":"ERROR","request_id":"6d53d4802d622e1cefa4f6b38b6fe2b5","error":"Unknown API Key"}
+2025-04-17 18:21:42,949 - AAL: 401 {"status":"ERROR","request_id":"bc72fd2b05acb21bb3b2abfd48b60c7a","error":"Unknown API Key"}
+2025-04-17 18:21:43,033 - AEP: 401 {"status":"ERROR","request_id":"cd3a744e8119ee85923782c2b4bd0ab8","error":"Unknown API Key"}
+2025-04-17 18:21:43,118 - AXP: 401 {"status":"ERROR","request_id":"d78e60f359c7cebe2aae2e255e732ae1","error":"Unknown API Key"}
+2025-04-17 18:21:43,200 - AIG: 401 {"status":"ERROR","request_id":"4ecb961159f013a5474c8678d188d058","error":"Unknown API Key"}
+2025-04-17 18:22:39,030 - ADBE: 429 {"status":"ERROR","request_id":"24a1075ce7310cfcf0357a296467546f","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:39,114 - AMD: 429 {"status":"ERROR","request_id":"fc772dea6f5ed2ff005012eea8acbc4b","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:39,204 - AES: 429 {"status":"ERROR","request_id":"f6bed81b180f929e97f54e7bea5ad3e4","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:39,287 - AFL: 429 {"status":"ERROR","request_id":"0a1c8e1925073d81837f00ad2dcac34f","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:39,367 - A: 429 {"status":"ERROR","request_id":"db2236bc05af2b7702f91e919ee894a1","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:39,455 - APD: 429 {"status":"ERROR","request_id":"5e71351872561391f9845a7a743b1f44","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:39,540 - AKAM: 429 {"status":"ERROR","request_id":"4b46faef40eb0d64f284363f995e1c7c","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:39,627 - ALB: 429 {"status":"ERROR","request_id":"ad7d30bcd8720fde2a080aeeb0b76b3e","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:39,706 - ARE: 429 {"status":"ERROR","request_id":"476780254e37236555daf5ad2e3bbb78","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:39,791 - ALGN: 429 {"status":"ERROR","request_id":"97b4e6afe0b4a2db9c476ec7423df3a6","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:39,871 - ALLE: 429 {"status":"ERROR","request_id":"3bfb40ee3a5a3ce64baf8cae7b48593b","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:39,957 - LNT: 429 {"status":"ERROR","request_id":"16e8a34d1249acb6bbe3773ca842c4ab","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:40,036 - ALL: 429 {"status":"ERROR","request_id":"cf849ee0f7bb764af8893515a8a46f17","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:40,117 - GOOGL: 429 {"status":"ERROR","request_id":"d4d44dfd64d579b143186cfb55763153","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:40,212 - GOOG: 429 {"status":"ERROR","request_id":"fdf9bce701d13d6228e540f8f12ed0e7","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:40,295 - MO: 429 {"status":"ERROR","request_id":"e506ef0afe0499d12c0d38b819eec5ec","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:40,380 - AMZN: 429 {"status":"ERROR","request_id":"d3ef7f2163fdcf83717f75881793250f","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:40,463 - AMCR: 429 {"status":"ERROR","request_id":"d245ded0300f19c8cae03a10e156d1e5","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:40,548 - AEE: 429 {"status":"ERROR","request_id":"f82db5b4fbb4929f7302dc4ce89bfbeb","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:40,634 - AAL: 429 {"status":"ERROR","request_id":"02fc9d67f29718b9e761dab08314319a","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:40,715 - AEP: 429 {"status":"ERROR","request_id":"38e134a31a77c3629c473a8d63c5bdd0","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:40,797 - AXP: 429 {"status":"ERROR","request_id":"d43b73bdb3665fad6fb0c893e9ef8244","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:40,883 - AIG: 429 {"status":"ERROR","request_id":"f0d16b5521c2f0e20d53d33e3513fbec","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:40,962 - AMT: 429 {"status":"ERROR","request_id":"5e83a9f62154f0482a75c811a767f13d","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:41,048 - AWK: 429 {"status":"ERROR","request_id":"16890d6166f27c572163c137b0894903","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:41,132 - AMP: 429 {"status":"ERROR","request_id":"4b79e007144d1a568ecb87e8c417a784","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:41,276 - ABC: 429 {"status":"ERROR","request_id":"1d010ddf48cb11cd3b5421194de09ccc","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:41,356 - AME: 429 {"status":"ERROR","request_id":"12b0b491b6aca01a7c58d0d5903a7cd4","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:41,450 - AMGN: 429 {"status":"ERROR","request_id":"6bc8913a13089369aa07330e7eed730e","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:41,533 - APH: 429 {"status":"ERROR","request_id":"bc557a5687e1a32b67835773e210c941","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:41,614 - ADI: 429 {"status":"ERROR","request_id":"5a20f711980294ff4916b34f677ecc47","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:41,697 - ANSS: 429 {"status":"ERROR","request_id":"5b95d0c603356a0b46e06e6900921e33","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:41,781 - AON: 429 {"status":"ERROR","request_id":"7cec8afc4f37703157dd98de2bd1ea35","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:41,864 - APA: 429 {"status":"ERROR","request_id":"0603db136581b160eee0cc98aaa2eb24","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:41,951 - AAPL: 429 {"status":"ERROR","request_id":"6af7c781c5f33758364d962c7ae9d970","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:42,034 - AMAT: 429 {"status":"ERROR","request_id":"f61867808e4fbeb35f300eeb98aef38b","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:42,191 - APTV: 429 {"status":"ERROR","request_id":"90152b0a675877cbf06b3bc49b4c9334","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:42,278 - ADM: 429 {"status":"ERROR","request_id":"c5aaeb17f62e637c095410361d5a5439","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:42,368 - ANET: 429 {"status":"ERROR","request_id":"749db05c33a2663e4e722b5f8e281f71","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:42,449 - AJG: 429 {"status":"ERROR","request_id":"cf1612f16c11055321e3f2e06cc1ce50","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:42,688 - AIZ: 429 {"status":"ERROR","request_id":"7f423115f8745ab6dd921bd04c98ced5","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:42,770 - T: 429 {"status":"ERROR","request_id":"cce4c8de9563f10427e32f65782e7de4","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:42,855 - ATO: 429 {"status":"ERROR","request_id":"f7239ef1deca2ac15f6c966e846e2548","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:42,942 - ADSK: 429 {"status":"ERROR","request_id":"8b164f71e1388a4e500047c1179501f8","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:43,037 - ADP: 429 {"status":"ERROR","request_id":"5a5955e7c35cbaaaefd43e732fcbe83f","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:43,118 - AZO: 429 {"status":"ERROR","request_id":"bd186dfbbd622272f016c00495159161","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:43,198 - AVB: 429 {"status":"ERROR","request_id":"7da790b205f81ee329ae79d0efcf727f","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:43,284 - AVY: 429 {"status":"ERROR","request_id":"bc9fba3bb105929794aca1042fbd1ec0","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:43,365 - BKR: 429 {"status":"ERROR","request_id":"fcc74dc49bcdda86e497fe723f3821f7","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:43,452 - BALL: 429 {"status":"ERROR","request_id":"1b00a5b7a0ad3a6971150a36314b1ade","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:43,536 - BAC: 429 {"status":"ERROR","request_id":"c1781ffef558caebe6614a649ce5ec3c","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:43,617 - BBWI: 429 {"status":"ERROR","request_id":"3bfafd89092093e63901e09c81e09302","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:43,698 - BAX: 429 {"status":"ERROR","request_id":"f46b36069ae86b9c3773a71cb4a7ea09","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:43,786 - BDX: 429 {"status":"ERROR","request_id":"5c13f7f11abe1345981372ad855ac97c","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:43,872 - BRK-B: 429 {"status":"ERROR","request_id":"f4545f55a07d5cabe230e83ef87db95c","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:43,957 - BBY: 429 {"status":"ERROR","request_id":"d3e66760be4edab9a6b61d7ec76dcb6e","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:44,041 - BIO: 429 {"status":"ERROR","request_id":"455c603e0802a4b81eaa8b6c1ab4c2b3","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:44,128 - TECH: 429 {"status":"ERROR","request_id":"0f1d655277f4f794b918beeed2d59c1e","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:44,212 - BIIB: 429 {"status":"ERROR","request_id":"84538facf819bf4b346a356525be75ec","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:44,299 - BLK: 429 {"status":"ERROR","request_id":"0cc152f2a14c424ef35aa4c6e274bd21","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:44,382 - BK: 429 {"status":"ERROR","request_id":"3da28f6bf20b3659eb94d9448fa0beb1","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:44,733 - BA: 429 {"status":"ERROR","request_id":"bf7167ab31c2b158c1c7459188f4ad3c","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:44,821 - BKNG: 429 {"status":"ERROR","request_id":"8bf11027063845784d95b56d22669575","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:44,932 - BWA: 429 {"status":"ERROR","request_id":"eedd1399d79a6debe48e7ca107a2838d","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:45,017 - BXP: 429 {"status":"ERROR","request_id":"61acede2cebdc5b9064403c62d3eefcd","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:45,099 - BSX: 429 {"status":"ERROR","request_id":"69b08144fd6725d2c8f66eb1dc6fc49e","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
+2025-04-17 18:22:45,181 - BMY: 429 {"status":"ERROR","request_id":"c7aab2ffacd955cacdd67b9401528a3b","error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"}
