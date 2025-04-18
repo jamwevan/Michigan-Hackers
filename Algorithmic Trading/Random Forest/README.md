@@ -48,7 +48,7 @@ This model **won the Michigan Hackers Algorithmic Trading Competition**, produci
 ### Prerequisites
 
 - Python 3.8+
-- Dependencies (install with `pip install -r requirements.txt`):
+- Dependencies:
   - `pandas`
   - `numpy`
   - `scikit-learn`
