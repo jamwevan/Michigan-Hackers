@@ -40,13 +40,13 @@ def main():
         else:
             valid_results.append((ticker, change))
 
-    print("\n❌ Missing or Invalid Prediction Files:")
-    print("----------------------------------------")
+    print("\nMissing or Invalid Prediction Files:")
+    print("------------------------------------")
     for err in errors:
         print(err)
 
-    print("\n📈 Valid Percent Changes (Sorted Low → High):")
-    print("---------------------------------------------")
+    print("\nValid Percent Changes (Sorted Low → High):")
+    print("------------------------------------------")
     for ticker, change in sorted(valid_results, key=lambda x: x[1]):
         print(f"{ticker}: {change:+.2f}%")
 
