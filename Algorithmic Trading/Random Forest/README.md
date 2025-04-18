@@ -53,7 +53,15 @@ This model **won the Michigan Hackers Algorithmic Trading Competition**, produci
   - `numpy`
   - `scikit-learn`
   - `matplotlib`
-
+  - `requests`
+  - `tqdm`
+  - `os`
+  - `time`
+  - `logging`
+  - `datetime`
+  - `concurrent.futures`
+  - `calendar`
+  
 ### Installation
 
 ```bash
