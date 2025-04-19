@@ -109,7 +109,8 @@ This is a provided utility to seed and generate deterministic random input for T
 ## Illegal Command Line Example 
 
 ```bash
-./market_debug -v -q      # '-q' is not a recognized flag
+./market_debug -v -q
+# '-q' is not a recognized flag      
 ```
 
 ---
