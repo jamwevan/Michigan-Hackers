@@ -4,16 +4,6 @@ This project simulates a real-time electronic stock exchange by processing and m
 
 ---
 
-## Overview
-
-The simulation reads input data representing trader activity, timestamps, and stock orders. It supports:
-
-- **Modes**: TL (Time Loop), PR (Priority), and TT (Time Travel)
-- **Matching Engine**: Uses `priority_queue` with custom comparators to match orders by price and time
-- **Output**: Logs trades, unmatched orders, summaries, and optional time traveler analytics
-
----
-
 ## File Structure
 
 ```
@@ -56,7 +46,7 @@ The simulation reads input data representing trader activity, timestamps, and st
 ## How to Compile
 
 ```bash
-make
+make market
 ```
 
 This compiles the source code and generates the `market` executable.
@@ -68,18 +58,17 @@ This compiles the source code and generates the `market` executable.
 Run the simulator using:
 
 ```bash
-./market -m TL -t 3 < input.txt
+./market < infile.txt > outfile.txt
 ```
 
 ### Command-Line Flags
 
-| Flag        | Description                                      |
-|-------------|--------------------------------------------------|
-| `-m MODE`   | Simulation mode (`TL`, `PR`, or `TT`)            |
-| `-t NUM`    | Focus output on a specific trader ID             |
-| `-v`        | Verbose mode — prints detailed match information |
-| `-g`        | Graphical/summary output mode                    |
-| `-s`        | Enables time traveler summary                    |
+| Short Flag | Long Flag         | Description                                            |
+|------------|-------------------|--------------------------------------------------------|
+| `-v`       | `--verbose`       | Enables verbose output                                 |
+| `-m`       | `--median`        | Outputs median transaction prices                      |
+| `-i`       | `--trader_info`   | Outputs trader-specific order summary                  |
+| `-t`       | `--time_travelers`| Outputs time traveler profit-maximizing trade summary  |
 
 ---
 
@@ -87,7 +76,7 @@ Run the simulator using:
 
 ### `getopt.h`
 
-This header provides `getopt()`, which parses command-line flags like `-m TL`, `-v`, and `-t 3`.
+This header provides `getopt()`, which parses command-line flags.
 
 ### `P2random.h`
 
@@ -98,7 +87,6 @@ This is a provided utility to seed and generate deterministic random input for T
 ## Legal Command Line Examples 
 
 ```bash
-./market_debug < infile.txt > outfile.txt
 ./market_debug --verbose --trader_info < infile.txt
 ./market_debug --verbose --median > outfile.txt
 ./market_debug --time_travelers
