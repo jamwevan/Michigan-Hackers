@@ -31,16 +31,6 @@ The simulation reads input data representing trader activity, timestamps, and st
 ├── small-input-TL.txt
 ├── spec-input-PR.txt
 ├── spec-input-TL.txt
-├── test-0-t.txt
-├── test-1-i.txt
-├── test-2-t.txt
-├── test-3-i.txt
-├── test-4-m.txt
-├── test-5-t.txt
-├── test-6-t.txt
-├── test-7-t.txt
-├── test-8-t.txt
-├── test-9-t.txt
 
 # Output verification files
 ├── output_test.txt

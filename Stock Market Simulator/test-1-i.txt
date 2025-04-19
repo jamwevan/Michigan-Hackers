@@ -1,4 +1,0 @@
-COMMENT: Testing large price fluctuations, simultaneous orders, and edge case quantities.
-MODE: TL
-NUM_TRADERS: 0
-NUM_STOCKS: 0
