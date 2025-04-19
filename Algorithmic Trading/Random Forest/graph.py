@@ -69,9 +69,23 @@ def plot_ticker(ticker):
     plt.xticks(rotation=45)
     fig.tight_layout()
     plt.grid(True)
-    plt.show()
+
+    os.makedirs("plots", exist_ok=True)
+    output_path = os.path.join("plots", f"{ticker}_comparison_plot.png")
+    plt.savefig(output_path)
+    print(f"[SAVED] Plot saved to {output_path}")
+    plt.close()
 
 def main():
+    # Clear the plots folder
+    plots_dir = "plots"
+    os.makedirs(plots_dir, exist_ok=True)
+    for filename in os.listdir(plots_dir):
+        file_path = os.path.join(plots_dir, filename)
+        if os.path.isfile(file_path):
+            os.remove(file_path)
+
+    # Load tickers and generate plots
     with open("tickers.txt", "r") as f:
         tickers = [line.strip() for line in f if line.strip()]
     for ticker in tickers:
