@@ -95,7 +95,7 @@ This is a provided utility to seed and generate deterministic random input for T
 
 ---
 
-## Legal Command Line Examples ✅
+## Legal Command Line Examples 
 
 ```bash
 ./market_debug < infile.txt > outfile.txt
@@ -106,7 +106,7 @@ This is a provided utility to seed and generate deterministic random input for T
 ./market_debug --vmit
 ```
 
-## Illegal Command Line Example ❌
+## Illegal Command Line Example 
 
 ```bash
 ./market_debug -v -q      # '-q' is not a recognized flag
