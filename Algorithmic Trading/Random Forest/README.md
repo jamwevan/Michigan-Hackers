@@ -65,8 +65,8 @@ This model **won the Michigan Hackers Algorithmic Trading Competition**, produci
 ### Installation
 
 ```bash
-git clone https://github.com/your_username/stock-predictor.git
-cd stock-predictor
+git clone https://github.com/jamwevan/Michigan-Hackers.git
+cd Michigan-Hackers/Algorithmic\ Trading/Random\ Forest/
 pip install -r requirements.txt
 ```
 
