@@ -4,6 +4,13 @@ This project simulates a real-time electronic stock exchange by processing and m
 
 ---
 
+## Installation
+
+```bash
+git clone https://github.com/jamwevan/Michigan-Hackers.git
+cd Michigan-Hackers/Stock\ Market\ Simulator/
+```
+
 ## File Structure
 
 ```
