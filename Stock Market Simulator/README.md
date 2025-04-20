@@ -110,4 +110,7 @@ This is a provided utility to seed and generate deterministic random input for T
 
 ---
 
+## Contact
 
+**James Evans**  
+📧 jamwevan@umich.edu
