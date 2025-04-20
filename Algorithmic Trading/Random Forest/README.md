@@ -4,14 +4,14 @@ This repository contains a **well-structured, step-by-step stock prediction syst
 
 The model used for forecasting is a **Random Forest Regressor**, chosen for two main reasons:
 
-- **Limited data**: Most stock histories in the dataset aren’t long enough to effectively train RNNs or LSTMs.  
+- **Limited data**: Without paying, I am not able to gather enough historical data with the APU to effectively train an RNN or LSTM.  
 - **Nonlinear relationships**: Random Forest is a tree-based ensemble method that handles nonlinear patterns well without assuming a specific functional form. This works well for financial data.
 
 ---
 
 ## 🏆 Competition Win
 
-This model **won the Michigan Hackers Algorithmic Trading Competition**, producing a **+476.51% return over a 6-month trading window**.
+This model **won the Michigan Hackers Algorithmic Trading Competition**, producing a **+478.51% return over a 6-month trading window**.
 
 ---
 
