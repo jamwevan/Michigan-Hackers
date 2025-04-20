@@ -1,4 +1,4 @@
-# Stock Market Simulation
+# Stock Market Simulator
 
 This project simulates a real-time electronic stock exchange by processing and matching buy/sell orders according to defined rules. It models traders, stocks, and a time-based transaction system, supporting multiple simulation modes and detailed output logging.
 
