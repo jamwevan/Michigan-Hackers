@@ -74,8 +74,6 @@ pip install -r requirements.txt
 
 ## Usage
 
-### Full pipeline:
-
 ```bash
 # Step 1: Download raw stock data
 python data_pipeline.py
