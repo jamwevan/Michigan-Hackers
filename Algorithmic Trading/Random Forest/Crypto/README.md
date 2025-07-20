@@ -23,7 +23,7 @@ The forecasting model is a **Random Forest Regressor**, selected due to:
   Trains a Random Forest model for each coin using historical indicators and generates future price predictions one day at a time. Results go to `predictions/`.
 
 - **`percent_change.py`**  
-  Computes percent change in predicted price for each coin, identifies missing prediction files, and ranks all cryptocurrencies from worst to best.
+  Computes the maximum percent increase in predicted price from the first to the most profitable future day for each coin, identifies missing prediction files, and ranks all cryptocurrencies from worst to best based on potential gain.
 
 - **`backtest.py`**  
   Simulates a basic long-only backtest. You input a coin, date range, and initial balance, and it reports the final value and return had you bought and held.

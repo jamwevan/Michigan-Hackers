@@ -1,7 +1,7 @@
-import pandas as pd
 import os
+import pandas as pd
 
-def calculate_percent_change(ticker):
+def calculate_max_percent_change(ticker):
     pred_path = os.path.join("predictions", f"{ticker}_iterative_predictions.csv")
 
     if not os.path.exists(pred_path):
@@ -9,46 +9,53 @@ def calculate_percent_change(ticker):
 
     df = pd.read_csv(pred_path)
 
+    # Identify and standardize the date column
     date_col = next((col for col in df.columns if col.strip().lower() == "date"), None)
     if date_col is None or "Close" not in df.columns:
         return None, f"Missing required columns in {ticker}'s prediction file."
 
     df.rename(columns={date_col: "date"}, inplace=True)
-    df["date"] = pd.to_datetime(df["date"], errors="coerce")
-    df = df.dropna(subset=["date", "Close"]).sort_values("date")
+    df = df.dropna(subset=["date", "Close"]).sort_values("date").reset_index(drop=True)
 
     if len(df) < 2:
         return None, f"Not enough data for {ticker}"
 
     start_price = df.iloc[0]["Close"]
-    end_price = df.iloc[-1]["Close"]
-    percent_change = ((end_price - start_price) / start_price) * 100
+    max_change = float("-inf")
+    max_day = -1
 
-    return percent_change, None
+    # Loop through each possible sell day
+    for i in range(1, len(df)):
+        pct_change = ((df.iloc[i]["Close"] - start_price) / start_price) * 100
+        if pct_change > max_change:
+            max_change = pct_change
+            max_day = i + 1  # Convert to 1-based index
+
+    return max_change, max_day
 
 def main():
-    with open("coins.txt", "r") as f: 
+    tickers_file = "coins.txt"
+    if not os.path.exists(tickers_file):
+        print("Missing coins.txt file.")
+        return
+
+    with open(tickers_file, "r") as f:
         tickers = [line.strip() for line in f if line.strip()]
 
-    valid_results = []
-    errors = []
-
+    results = []
     for ticker in tickers:
-        change, error = calculate_percent_change(ticker)
-        if error:
-            errors.append(error)
-        else:
-            valid_results.append((ticker, change))
+        change, detail = calculate_max_percent_change(ticker)
+        if change is None:
+            print(f"[SKIP] {ticker}: {detail}")
+            continue
+        results.append((ticker, change, detail))
 
-    print("\nMissing or Invalid Prediction Files:")
-    print("------------------------------------")
-    for err in errors:
-        print(err)
+    # Sort by percent change in descending order
+    results.sort(key=lambda x: x[1], reverse=True)
 
-    print("\nValid Percent Changes (Sorted Low → High):")
-    print("------------------------------------------")
-    for ticker, change in sorted(valid_results, key=lambda x: x[1]):
-        print(f"{ticker}: {change:+.2f}%")
+    print("\nMaximum Percent Changes:")
+    for ticker, change, day in results:
+        print(f"{ticker}: {change:.2f}% (best sell day: day {day})")
 
 if __name__ == "__main__":
     main()
