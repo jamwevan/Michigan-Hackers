@@ -50,11 +50,10 @@ python percent_change.py
 
 # Step 6: Simulate buy-and-hold backtest
 python backtest.py
+```
 
 ---
 
 ## 📬 Contact
 
-**James Evans**\
-📧 [jamwevan@umich.edu](mailto\:jamwevan@umich.edu)
-
+**James Evans**📧 [jamwevan@umich.edu](mailto\:jamwevan@umich.edu)
