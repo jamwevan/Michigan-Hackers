@@ -1,4 +1,4 @@
-# 🧠 Machine Learning Powered Crypto Trading Algorithm
+# Machine Learning Powered Crypto Trading Algorithm
 
 This repository contains a **modular, step-by-step cryptocurrency forecasting system**, where each script handles a specific stage in the pipeline. The process fetches raw OHLCV data for selected cryptocurrencies, applies technical analysis, trains a predictive model (Random Forest), and simulates forward trading days to forecast future price movement. Additional tools allow for percent change ranking, performance evaluation, and historical backtesting.
 
