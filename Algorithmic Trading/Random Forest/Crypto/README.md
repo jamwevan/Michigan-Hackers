@@ -56,5 +56,4 @@ python backtest.py
 
 ## Contact
 
-**James Evans**  
-📧 [jamwevan@umich.edu](mailto:jamwevan@umich.edu)
+[jamwevan@umich.edu](mailto:jamwevan@umich.edu)
