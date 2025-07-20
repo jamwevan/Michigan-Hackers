@@ -1,4 +1,4 @@
-# Machine Learning Powered Trading Algorithm
+# Machine Learning Powered Stock Trading Algorithm
 
 This repository contains a **well-structured, step-by-step stock prediction system**, where each script handles a specific task in the workflow. The pipeline fetches raw data from an external API, formats it, extracts features, trains a predictive model (Random Forest), and uses that model to simulate future trading days. Additional tools are included for evaluating prediction performance, visualizing results, and backtesting hypothetical trades.
 
@@ -40,35 +40,6 @@ This model **won the Michigan Hackers Algorithmic Trading Competition**, produci
 
 - **`graph.py`** *(optional)*  
   Plots actual vs. predicted price paths for individual stocks. Helpful for visualization and debugging.
-
----
-
-## Getting Started
-
-### Prerequisites
-
-- Python 3.8+
-- Dependencies:
-  - `pandas`
-  - `numpy`
-  - `scikit-learn`
-  - `matplotlib`
-  - `requests`
-  - `tqdm`
-  - `os`
-  - `time`
-  - `logging`
-  - `datetime`
-  - `concurrent.futures`
-  - `calendar`
-  
-### Installation
-
-```bash
-git clone https://github.com/jamwevan/Michigan-Hackers.git
-cd Michigan-Hackers/Algorithmic\ Trading/Random\ Forest/
-pip install -r requirements.txt
-```
 
 ---
 
