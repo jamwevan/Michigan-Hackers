@@ -75,5 +75,4 @@ python graph.py
 
 ## Contact
 
-**James Evans**  
-📧 jamwevan@umich.edu
+jamwevan@umich.edu
