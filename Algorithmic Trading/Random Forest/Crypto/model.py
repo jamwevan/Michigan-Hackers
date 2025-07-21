@@ -137,15 +137,17 @@ def main():
             file_path = os.path.join('predictions', file)
             if os.path.isfile(file_path):
                 os.remove(file_path)
-
     train_ranges = {}
     with open('coin_data_ranges.txt') as f:
         for line in f:
-            if ':' in line:
-                ticker, rest = line.split(":", 1)
-                if "to" in rest:
-                    start, end = [s.strip() for s in rest.split("to")]
-                    train_ranges[ticker.strip()] = (adjust_date(start), adjust_date(end))
+            line = line.strip()
+            if ',' in line:
+                parts = line.split(',')
+                if len(parts) >= 3:
+                    ticker = parts[0].strip()
+                    start = parts[1].strip()
+                    end = parts[2].strip()
+                    train_ranges[ticker] = (adjust_date(start), adjust_date(end))
 
     with open('coins.txt', 'r') as f:
         tickers = [line.strip() for line in f if line.strip()]
