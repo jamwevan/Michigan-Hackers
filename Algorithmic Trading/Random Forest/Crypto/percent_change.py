@@ -15,6 +15,7 @@ def calculate_max_percent_change(ticker):
         return None, f"Missing required columns in {ticker}'s prediction file."
 
     df.rename(columns={date_col: "date"}, inplace=True)
+    df["date"] = pd.to_datetime(df["date"], errors="coerce")
     df = df.dropna(subset=["date", "Close"]).sort_values("date").reset_index(drop=True)
 
     if len(df) < 2:
@@ -29,9 +30,10 @@ def calculate_max_percent_change(ticker):
         pct_change = ((df.iloc[i]["Close"] - start_price) / start_price) * 100
         if pct_change > max_change:
             max_change = pct_change
-            max_day = i + 1  # Convert to 1-based index
+            max_day = i  # zero-based index for df lookup
 
-    return max_change, max_day
+    best_date = df.loc[max_day, "date"].strftime("%Y-%m-%d")
+    return max_change, best_date
 
 def main():
     tickers_file = "coins.txt"
@@ -50,12 +52,12 @@ def main():
             continue
         results.append((ticker, change, detail))
 
-    # Sort by percent change in descending order
-    results.sort(key=lambda x: x[1], reverse=True)
+    # Sort by percent change in ascending order
+    results.sort(key=lambda x: x[1])  # ← changed from reverse=True to ascending
 
     print("\nMaximum Percent Changes:")
-    for ticker, change, day in results:
-        print(f"{ticker}: {change:.2f}% (best sell day: day {day})")
+    for ticker, change, date in results:
+        print(f"{ticker}: {change:.2f}% (best sell date: {date})")
 
 if __name__ == "__main__":
     main()
