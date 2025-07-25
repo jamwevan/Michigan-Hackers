@@ -1,2 +1,2 @@
 Create a master README that gives a general description for each one of your projects. 
-Make sure heading sizes are all consistent between all the README files. 
+Make sure heading sizes and other formatting aspects are all consistent between all the README files. 
