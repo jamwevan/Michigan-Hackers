@@ -8,21 +8,20 @@ class TradingEnv(gym.Env):
     Discrete actions: 0=short, 1=flat, 2=long
     Observation: features[t] + current position (-1/0/+1)
 
-    We keep two tracks:
-      • r_learn (agent reward): may use excess returns, risk-normalization, penalties
-      • r_pnl   (true P&L return): pos*asset_ret - trading_cost  → used to update equity
+    Two tracks:
+      • r_learn: reward to the agent (excess-return, risk-normalized, penalties)
+      • r_pnl  : true P&L return (pos*asset_ret - cost) for equity/metrics
 
     Optional market returns (rets_mkt) enable excess-return reward:
       ret_excess = asset_ret - beta * mkt_ret
     """
-
     metadata = {}
 
     def __init__(
         self,
         X: np.ndarray,
         rets: np.ndarray,
-        rets_mkt: Optional[np.ndarray] = None,  # optional market series for excess returns
+        rets_mkt: Optional[np.ndarray] = None,
         *,
         beta: float = 1.0,
         cost_bps: int = 10,
@@ -45,7 +44,7 @@ class TradingEnv(gym.Env):
             assert len(rets_mkt) == len(rets), "rets_mkt must align with rets"
             self.rets_mkt = rets_mkt.astype(np.float32)
 
-        # Configs
+        # Config
         self.beta = float(beta)
         self.cost = float(cost_bps) / 1e4
         self.cooldown_K = int(cooldown_k)
@@ -56,13 +55,13 @@ class TradingEnv(gym.Env):
         self.trend_win = max(2, int(trend_win))
         self.short_block_thresh = float(short_block_thresh)
 
-        # Precompute series for learning reward
+        # Base series for learning (asset or excess)
         if self.rets_mkt is None:
-            self.ret_base = self.rets  # no market: learn on raw asset ret
+            self.ret_base = self.rets
         else:
-            self.ret_base = self.rets - self.beta * self.rets_mkt  # excess return
+            self.ret_base = self.rets - self.beta * self.rets_mkt
 
-        # EWMA vol & trend based on learning base series
+        # EWMA vol & trend on learning base series
         self.roll_vol = self._ewma_vol(self.ret_base, self.vol_win) + 1e-8
         self.trend = self._ewma(self.ret_base, self.trend_win)
 
@@ -107,18 +106,17 @@ class TradingEnv(gym.Env):
         self.pos = 0
         self.prev_pos = 0
         self.cooldown = 0
-        self.eq_true = 1.0  # equity in TRUE P&L space
+        self.eq_true = 1.0  # equity from true P&L returns
         return self._obs(), {}
 
     def step(self, action):
-        # Map {0,1,2} -> {-1,0,+1}
-        desired_pos = int(action) - 1
+        desired_pos = int(action) - 1  # {-1,0,+1}
 
-        # Trend gate: block fresh shorts in strong positive trend (on learning base series)
+        # Trend gate: block fresh shorts in strong positive trend
         if self.trend[self.t] > self.short_block_thresh and desired_pos == -1 and self.pos >= 0:
             desired_pos = 0
 
-        # Cooldown handling
+        # Cooldown
         traded = False
         if self.cooldown > 0 and desired_pos != self.pos:
             new_pos = self.pos
@@ -134,15 +132,15 @@ class TradingEnv(gym.Env):
 
         # Returns
         asset_ret = float(self.rets[self.t])
-        base_ret = float(self.ret_base[self.t])          # asset or excess
+        base_ret = float(self.ret_base[self.t])
         vol = float(self.roll_vol[self.t])
 
-        # True P&L (for equity)
+        # True P&L return (for equity/metrics)
         trade_cost = self.cost if traded else 0.0
         r_pnl = self.pos * asset_ret - trade_cost
         self.eq_true *= (1.0 + r_pnl)
 
-        # Learning reward (risk-normalized + penalties)
+        # Learning reward (risk-normalized, penalties)
         base = self.pos * base_ret
         if self.risk_norm:
             base = base / vol
@@ -150,17 +148,12 @@ class TradingEnv(gym.Env):
 
         self.t += 1
         terminated = (self.t >= self.T - 1)
-        info = {
-            "equity": self.eq_true,  # use this for metrics
-            "pos": self.pos,
-            "r_pnl": r_pnl,
-            "r_learn": r_learn,
-        }
+        info = {"equity": self.eq_true, "pos": self.pos, "r_pnl": r_pnl, "r_learn": r_learn}
         return self._obs(), r_learn, terminated, False, info
 
 
 if __name__ == "__main__":
-    # Smoke test
+    # Quick smoke test
     X = np.load("env_data/X_train.npy")
     R = np.load("env_data/rets_train.npy")
     try:
